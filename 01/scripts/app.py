@@ -1,2 +1,2 @@
-# First Script
+# First Script/
 print("Hello, World!")
