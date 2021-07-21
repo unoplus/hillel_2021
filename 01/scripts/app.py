@@ -1,2 +1,2 @@
-# First Script
+# First Script for Git
 print("Hello, World!")
