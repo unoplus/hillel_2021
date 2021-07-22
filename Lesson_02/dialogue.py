@@ -12,4 +12,4 @@ affairs = input(f"Как дела {name}?: ")
 num1 = int(input("Загадай число от 1: "))
 num2 = int(input("Загадай ещё одно число от 1: "))
 sum1 = num1 + num2
-print(f"Сумма загаданных чисел {sum1}: ")
+print(f"Сумма загаданных чисел: {sum1}")
