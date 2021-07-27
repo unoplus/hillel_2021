@@ -7,7 +7,7 @@
 
 your_password = "Password"
 user_password = input("Type your password: ")
-if user_password in your_password:
+if user_password == your_password:
     print("Granted!")
 else:
     print("Denied!")
