@@ -22,13 +22,13 @@ for i in range(len(same_number)-1):
         count += 1
 
 if count > 0:
-    print("В вашем числе есть две одинаковые цифры.")
+    print(f"{number}\nДа.")
 else:
-    print("В вашем числе нет двух одинаковых цифер.")
+    print(f"{number}\nНет.")
 
 # Способ 2, разница "весов" (понимаем, что цикл "wile" выполняется и для участка кода ниже).
 same_number2 = set(number)
 if len(same_number2) != len(number):
-    print("В вашем числе есть две одинаковые цифры.")
+    print(f"{number}\nДа.")
 else:
-    print("В вашем числе нет двух одинаковых цифер.")
+    print(f"{number}\nНет.")
