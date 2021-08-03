@@ -19,5 +19,5 @@ while result < number:
     if count == divider:
         divider *= 10
     if (result * result) % divider == count:
-        print(result)
+        print(f"{count}**{count}={result}")
     count += 1
