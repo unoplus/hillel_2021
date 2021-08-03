@@ -25,6 +25,6 @@ for i in find_number:
         count += 1
 
 if count > 0:
-    print("В вашем числе есть две одинаковые цифры.")
+    print(f"{number}\nДа.")
 else:
-    print("В вашем числе нет двух одинаковых цифер.")
+    print(f"{number}\nНет.")
