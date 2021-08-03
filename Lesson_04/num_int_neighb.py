@@ -22,6 +22,6 @@ for i in range(len(find_number)-1):
         count += 1
 
 if count > 0:
-    print("В вашем числе есть две одинаковые цифры стощие рядом.")
+    print(f"{number}\nДа.")
 else:
-    print("В вашем числе нет двух одинаковых цифер стощих рядом.")
+    print(f"{number}\nНет.")
