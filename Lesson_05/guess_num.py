@@ -13,7 +13,7 @@ import random
 evil_calculon = "\U0001F606"
 mockery_calculon = "\U0001F923"
 shushing_calculon = "\U0001F92B"
-guess_num = random.randint(1, 3)
+guess_num = random.randint(1, 100)
 count = 0
 
 print(f"Привет! Меня зовут Calculon! Я тут загадал число от 1 до 100.\n"
