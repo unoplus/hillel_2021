@@ -13,14 +13,15 @@ import random
 evil_calculon = "\U0001F606"
 mockery_calculon = "\U0001F923"
 shushing_calculon = "\U0001F92B"
-guess_num = random.randint(1, 100)
+guess_num = random.randint(1, 3)
+count = 0
 
 print(f"Привет! Меня зовут Calculon! Я тут загадал число от 1 до 100.\n"
       f"Думаешь ты сможешь отгадать? {evil_calculon}")
 
 while True:
     user_num = input("Введи своё число, жалкий человечишка: ")
-    count = 1
+    count += 1
     if user_num.isdigit():
         if int(user_num) == guess_num:
             print(f"Ты угадал, моё число {guess_num}... {shushing_calculon}\n"
@@ -28,7 +29,5 @@ while True:
             break
         else:
             print(f"Ха-ха-ха! Это не то число! {mockery_calculon}")
-            count += 1
     else:
         print(f"Это не число, мягкотелый! {mockery_calculon}")
-        count += 1
