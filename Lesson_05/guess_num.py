@@ -13,7 +13,7 @@ import random
 evil_calculon = "\U0001F606"
 mockery_calculon = "\U0001F923"
 shushing_calculon = "\U0001F92B"
-guess_num = random.randint(1, 100)
+guess_num = random.randint(1, 3)
 count = 0
 
 print(f"Привет! Меня зовут Calculon! Я тут загадал число от 1 до 100.\n"
@@ -32,4 +32,5 @@ while True:
         else:
             print(f"Ха-ха-ха! Твоё число больше моего! {mockery_calculon}")
     else:
-        print(f"Подумай лучше, мягкотелый! {mockery_calculon}")
+        print(f"Aх ты жалкий мешок костей, тебе разрешено вводить число от 1 до 100,"
+              f" пробуй еще раз! {mockery_calculon}")
