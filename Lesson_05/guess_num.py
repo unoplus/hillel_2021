@@ -27,7 +27,9 @@ while True:
             print(f"Ты угадал, моё число {guess_num}... {shushing_calculon}\n"
                   f"Количество попыток: {count}")
             break
+        elif int(user_num) < guess_num:
+            print(f"Ха-ха-ха! Твоё число меньше моего! {mockery_calculon}")
         else:
-            print(f"Ха-ха-ха! Это не то число! {mockery_calculon}")
+            print(f"Ха-ха-ха! Твоё число больше моего! {mockery_calculon}")
     else:
-        print(f"Это не число, мягкотелый! {mockery_calculon}")
+        print(f"Подумай лучше, мягкотелый! {mockery_calculon}")
