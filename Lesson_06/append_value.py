@@ -14,6 +14,7 @@ from random import randint
 
 k = 4
 C = 25
+
 user_list = [randint(1, 25) for i in range(10)]
 user_list.append(randint(1, 25))
 
