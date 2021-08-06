@@ -14,7 +14,8 @@ from random import randint
 
 k = 4
 user_list = [randint(1, 25) for i in range(10)]
-for i in range(k+1, len(user_list)-1):
+print(user_list)
+for i in range(k, len(user_list)-1):
     user_list[i] = user_list[i+1]
 
 user_list.pop()
