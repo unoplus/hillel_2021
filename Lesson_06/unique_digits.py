@@ -7,9 +7,7 @@
 # Если через генераторы списков, то решение совсем-совсем в одну строку не получится
 from random import randint
 
-# user_list1 = [randint(1, 25) for i in range(10)]
-# user_list2 = [randint(1, 25) for i in range(10)]
-user_list1 = [1, 1, 2, 3, 4, 3]
-user_list2 = [5, 6, 6, 7, 2]
+user_list1 = [randint(1, 25) for i in range(10)]
+user_list2 = [randint(1, 25) for i in range(10)]
 
 print(len([0 for i in user_list1 + user_list2 if (user_list1 + user_list2).count(i) == 1]))
