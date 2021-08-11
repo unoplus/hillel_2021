@@ -17,5 +17,5 @@ some_text = """
 """
 
 print(sorted([(count, word) for word, count in
-              ({i: ([val for i, val in enumerate(sub("[,.!?:;]", "", some_text.lower()).split())]).count(i)
-                for i in some_text}).items()]).pop()[1])
+              ({i: ([val for j, val in enumerate(sub("[,.!?:;]", "", some_text.lower()).split())]).count(i)
+                for i in ([val for j, val in enumerate(sub("[,.!?:;]", "", some_text.lower()).split())])}).items()]).pop()[1])
