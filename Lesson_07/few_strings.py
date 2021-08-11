@@ -17,6 +17,6 @@ some_text = """
 """
 
 count_words = {i: ([val for j, val in enumerate(sub("[,.!?:;]", "", some_text.lower()).split())]).count(i)
-               for i in some_text}
+               for i in ([val for j, val in enumerate(sub("[,.!?:;]", "", some_text.lower()).split())])}
 
 print(sorted([(count, word) for word, count in count_words.items()]).pop()[1])
