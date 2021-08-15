@@ -48,12 +48,12 @@ else:
 def comparison_func2(random_list, random_num):
     result2 = 0
     print(random_list, random_num)
-    for x in random_list:
-        for y in random_list:
-            result2 = x + y
-            yield result2 == random_num
+    for x, xval in enumerate(random_list):
+        for y, yval in enumerate(random_list):
+            result2 = xval + yval
+            yield result2 == random_num and x != y
         else:
-            yield result2 == random_num
+            yield result2 == random_num and x != y
 
 
 answer2 = 0
