@@ -10,16 +10,15 @@
 
 import random
 
-# С заранее определённым списком
+# С заранее определённым списком и числом
 user_list = [1, 1, 2, 3, 4, 2, 5]
-print(list(map((lambda x, y=2: x**y), user_list)))
+a = 3
+print(list(map((lambda x, y=2: x**y), user_list, len(user_list) * [a])))
 
 # С использованием генератора range
-print(list(map((lambda x, y=2: x**y), range(10))))
+print(list(map((lambda x, y=2: x**y), range(10), 10 * [a])))
 
 # С использованием генератора списков
-print(list(map((lambda x, y=2: x**y), [random.randint(1, 25) for i in range(10)])))
-
-# С использованием ручного ввода
 print(list(map((lambda x, y=2: x**y),
-               [int(j) for i, j in enumerate(input("Введите числа через пробел: ").split())])))
+               [random.randint(1, 25) for i in range(10)],
+               len([random.randint(1, 25) for i in range(10)]) * [a])))
