@@ -16,9 +16,9 @@ a = 3
 print(list(map((lambda x, y=2: x**y), user_list, len(user_list) * [a])))
 
 # С использованием генератора range
-print(list(map((lambda x, y=2: x**y), range(10), 10 * [a])))
+print(list(map((lambda x, y=2: x**y), range(10), 10 * [random.randint(1, 10)])))
 
 # С использованием генератора списков
 print(list(map((lambda x, y=2: x**y),
                [random.randint(1, 25) for i in range(10)],
-               len([random.randint(1, 25) for i in range(10)]) * [a])))
+               len([random.randint(1, 25) for i in range(10)]) * [random.randint(1, 10)])))
