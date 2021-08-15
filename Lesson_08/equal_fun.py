@@ -11,7 +11,7 @@ import random
 
 # С заранее определённым списком и числом
 user_list = [1, 1, 3, 5, 13, 8]
-user_list2 = [2, 1, 4, 6, 7]
+user_list2 = [6, 1, 4, 4, 7]
 num = 14
 num2 = 12
 
@@ -21,8 +21,6 @@ def comparison_func(lst, val):
     for i, ival in enumerate(lst):
         for j, jval in enumerate(lst):
             result = ival + jval
-            yield result == val and i != j
-        else:
             yield result == val and i != j
 
 
@@ -51,8 +49,6 @@ def comparison_func2(random_list, random_num):
     for x, xval in enumerate(random_list):
         for y, yval in enumerate(random_list):
             result2 = xval + yval
-            yield result2 == random_num and x != y
-        else:
             yield result2 == random_num and x != y
 
 
