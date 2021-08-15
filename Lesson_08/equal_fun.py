@@ -11,19 +11,19 @@ import random
 
 # С заранее определённым списком и числом
 user_list = [1, 1, 3, 5, 13, 8]
-user_list2 = [2, 1, 4, 5, 13]
+user_list2 = [2, 1, 4, 6, 7]
 num = 14
-num2 = 11
+num2 = 12
 
 
 def comparison_func(lst, val):
     result = 0
-    for i in lst:
-        for j in lst:
-            result = i + j
-            yield result == val
+    for i, ival in enumerate(lst):
+        for j, jval in enumerate(lst):
+            result = ival + jval
+            yield result == val and i != j
         else:
-            yield result == val
+            yield result == val and i != j
 
 
 answer = 0
