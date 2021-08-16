@@ -12,8 +12,8 @@ import random
 
 # С заранее определённым списком и числом
 user_list = [1, 1, 2, 3, 4, 2, 5]
-a = 3
-print(list(map((lambda x, y=2: x**y), user_list, len(user_list) * [a])))
+num = 3
+print(list(map((lambda x, y=2: x**y), user_list, len(user_list) * [num])))
 
 # С использованием генератора range
 print(list(map((lambda x, y=2: x**y), range(10), 10 * [random.randint(1, 10)])))
