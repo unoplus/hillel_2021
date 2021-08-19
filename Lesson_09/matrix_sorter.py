@@ -55,7 +55,7 @@ def print_sorter(random_list):
 while True:
     size_matrix = int(input("Введите размер матрицы. Число должно быть больше 5: "))
     if size_matrix <= 5:
-        print("Ваше должно быть больше 5!")
+        print("Ваше число должно быть больше 5!")
     else:
         break
 
