@@ -42,7 +42,6 @@ def matrix_sorter(size_matrix):
                         temp_list[j], temp_list[j + 1] = temp_list[j + 1], temp_list[j]
 
     print_sorter(random_list)
-    return random_list
 
 
 def print_sorter(random_list):
