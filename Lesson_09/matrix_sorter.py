@@ -9,15 +9,15 @@ import random
 def matrix_sorter(size_matrix):
     random_list = [[random.randint(1, 50) for j in range(size_matrix)] for i in range(size_matrix)]
     for i in range(len(random_list)):
-        result = 0
         size_list = 0
         temp_list = []
 
         for j in range(len(random_list)):
             temp_list.append(random_list[i][j])
-            result += random_list[i][j]
-        temp_list.append(result)
+            size_list += random_list[i][j]
+        temp_list.append(size_list)
         random_list[i] = temp_list
+        size_list = 0
     print_sorter(random_list)
 
     while size_list != size_matrix:
@@ -31,12 +31,12 @@ def matrix_sorter(size_matrix):
         temp_list = random_list[num]
         size_list = len(temp_list)
         if num % 2 != 0:
-            for i in range(size_list - 2):
+            for i in range(size_list - 1):
                 for j in range(size_list - 3, i - 1, -1):
                     if temp_list[j + 1] < temp_list[j]:
                         temp_list[j], temp_list[j + 1] = temp_list[j + 1], temp_list[j]
         else:
-            for i in range(size_list - 2):
+            for i in range(size_list - 1):
                 for j in range(size_list - 3, i - 1, -1):
                     if temp_list[j + 1] > temp_list[j]:
                         temp_list[j], temp_list[j + 1] = temp_list[j + 1], temp_list[j]
