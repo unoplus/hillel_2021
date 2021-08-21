@@ -1,8 +1,6 @@
-<table>
-<tr><h1 align="left">LESSON</h1>
-<h2 align="center"><img src="https://thumbs.gfycat.com/ComplexAfraidLadybug-max-1mb.gif" ></h2>
-<h1 align="right">TEN</h1></tr>
-</table>
+<h1 align="left">LESSON
+<align="center"><img src="https://thumbs.gfycat.com/ComplexAfraidLadybug-max-1mb.gif" >
+<align="right">TEN</h1>
 
 ## ЧАСТЬ ПЕРВАЯ ДЛЯ ПРОВЕРКИ :metal:
 ### 20 Kopeek
