@@ -1,6 +1,8 @@
+<div style="vertical-align:middle;">
 <h1 align="center">LESSON
 <img src="https://thumbs.gfycat.com/ComplexAfraidLadybug-max-1mb.gif" >
 TEN</h1>
+</div>
 
 ## ЧАСТЬ ПЕРВАЯ ДЛЯ ПРОВЕРКИ  :metal:
 1. __reverse_number.py__    - _Разворот числа_
