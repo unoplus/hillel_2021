@@ -1,4 +1,4 @@
-# LESSON TEN
+# LESSON TEN    <img src="https://thumbs.gfycat.com/ComplexAfraidLadybug-max-1mb.gif" >
 ## ЧАСТЬ ПЕРВАЯ ДЛЯ ПРОВЕРКИ :metal:
 ### 20 Kopeek
 
