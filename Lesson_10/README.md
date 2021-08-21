@@ -1,4 +1,4 @@
-<div style="height:160px;; vertical-align:middle; border:1px solid #000;">
+<div style="height:160px;; vertical-align:middle;  display:table-cell; border:1px solid #000;">
 <h1 align="center">LESSON
 <img src="https://thumbs.gfycat.com/ComplexAfraidLadybug-max-1mb.gif" >
 TEN</h1>
