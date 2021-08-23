@@ -29,6 +29,7 @@ def matrix_sorter(size_matrix):
 
     for num in range(size_matrix):
         temp_list = random_list[num]
+        print(temp_list)
         size_list = len(temp_list)
         if num % 2 != 0:
             for i in range(size_list - 1):
@@ -54,7 +55,7 @@ def print_sorter(random_list):
 
 while True:
     size_matrix = int(input("Введите размер матрицы. Число должно быть больше 5: "))
-    if size_matrix <= 5:
+    if size_matrix <= 2:
         print("Ваше число должно быть больше 5!")
     else:
         break
