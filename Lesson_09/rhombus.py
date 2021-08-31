@@ -5,11 +5,17 @@
 полный ромб полный на половину
 """
 
-n = int(input("Ведите высоту фигуры: "))
-for i in range(n - 1, -1, -1):
-    print((' ' * i + '*' * ((n * 2 - 1) - i * 2)))
-for i in range(0, n):
-    if i == n - 1:
-        print((' ' * i + '*' * ((n * 2 - 1) - (i * 2))))
-    if n - 1 > i > 0:
-        print((' ' * i + '*' * ((n * 2 - 1) - (n * 2 - 2)) + ' ' * ((n * 2 - 3) - (i * 2)) + '*'))
+
+def rhombus(high):
+    for i in range(high - 1, -1, -1):
+        print((' ' * i + '*' * ((high * 2 - 1) - i * 2)))
+    for i in range(0, high):
+        if i == high - 1:
+            print((' ' * i + '*' * ((high * 2 - 1) - (i * 2))))
+        if high - 1 > i > 0:
+            print((' ' * i + '*' * ((high * 2 - 1) - (high * 2 - 2)) + ' ' * ((high * 2 - 3) - (i * 2)) + '*'))
+
+
+if __name__ == "__main__":
+    user_high = int(input("Ведите высоту фигуры: "))
+    rhombus(user_high)
