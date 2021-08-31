@@ -5,6 +5,12 @@
 полный треугольник
 """
 
-n = int(input("Ведите высоту фигуры: "))
-for i in range(n - 1, -1, -1):
-    print((' ' * i + '*' * ((n * 2 - 1) - i * 2)))
+
+def triangle(high):
+    for i in range(high - 1, -1, -1):
+        print((' ' * i + '*' * ((high * 2 - 1) - i * 2)))
+
+
+if __name__ == "__main__":
+    user_high = int(input("Ведите высоту фигуры: "))
+    triangle(user_high)
