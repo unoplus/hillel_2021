@@ -5,11 +5,17 @@
 полный треугольник
 """
 
-n = int(input("Ведите высоту фигуры: "))
-x = 1
-for i in range(n - 1, -1, -1):
-    if (n - 1) > i > 0:
-        print((' ' * i + '*' * ((n * 2 - 1) - (n * 2 - 2)) + ' ' * x + '*'))
-        x += 2
-    else:
-        print((' ' * i + '*' * ((n * 2 - 1) - (i * 2))))
+
+def empty_triangle(high):
+    x = 1
+    for i in range(high - 1, -1, -1):
+        if (high - 1) > i > 0:
+            print((' ' * i + '*' * ((high * 2 - 1) - (high * 2 - 2)) + ' ' * x + '*'))
+            x += 2
+        else:
+            print((' ' * i + '*' * ((high * 2 - 1) - (i * 2))))
+
+
+if __name__ == "__main__":
+    user_high = int(input("Ведите высоту фигуры: "))
+    empty_triangle(user_high)
