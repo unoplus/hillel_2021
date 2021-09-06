@@ -14,4 +14,4 @@
 9. __method__next\_\_.py__ - _Работа в цикле с файлом._
 10. __sys_stdout.py__ - _Пример работы с объектом stdout._
 11. __write_stdout.py__ - _Запись в файл через stdout._
-12. --read_stdin.py__ - _Перненаправление через stdin._
+12. __read_stdin.py__ - _Перненаправление через stdin._
