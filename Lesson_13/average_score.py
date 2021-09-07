@@ -103,7 +103,7 @@ def students(some_size: str):
         all_score = all_score + average_score
         all_average_score = round(all_score / count, 2)
 
-    print(f"\nСредний балл группы: {all_average_score}")
+    print(f"\nСредний балл группы:\t   {all_average_score}")
     new_students_file.close()
     students_file.close()
 
