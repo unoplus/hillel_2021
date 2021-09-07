@@ -82,13 +82,14 @@ def students(some_size: str):
         outsiders = ""
         data_list = line.split()
         first_name, last_name, *rating = data_list
+        first_name = first_name[:1] + "."
 
         for score in rating:
             student_score += int(score)
             count += 1
 
         average_score = round(student_score / count, 2)
-        list_of_fio = " ".join([first_name, last_name])
+        list_of_fio = " ".join([last_name, first_name])
 
         if len(list_of_fio) < len(some_size):
             b = len(some_size) - len(list_of_fio)
