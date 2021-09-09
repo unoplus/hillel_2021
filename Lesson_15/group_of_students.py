@@ -25,20 +25,6 @@ class Student:
         self.age = age
         self.grades = grades
 
-    def average_grade(self) -> float:
-        """
-        Фуекция для подсчёта среднего балла студента.
-        :return: Возвращает средний балл.
-        """
-        average_grade = 0
-        count = 0
-        for grade in self.grades:
-            average_grade += grade
-            count += 1
-        average_grade = round(average_grade / count, 2)
-
-        return average_grade
-
 
 class Group:
     def __init__(self, students: list[Student]):
@@ -47,6 +33,20 @@ class Group:
         :param students: список студентов
         """
         self.students = students
+
+    def _average_grade(self, students: Student) -> float:
+        """
+        Приватная функция для подсчёта среднего балла студента.
+        :return: Возвращает средний балл.
+        """
+        average_grade = 0
+        count = 0
+        for grade in students.grades:
+            average_grade += grade
+            count += 1
+        average_grade = round(average_grade / count, 2)
+
+        return average_grade
 
     def add_student(self, student: Student) -> None:
         """
@@ -66,7 +66,7 @@ class Group:
 
     def print_students(self):
         for student in self.students:
-            if student.average_grade() < 3:
+            if self._average_grade(student) < 3:
                 print("{bold}{red}{:8s}{:10s}{}{endcolor}"
                       .format(student.last_name, student.first_name,
                               student.grades, bold="\033[1m", red="\033[31m",
