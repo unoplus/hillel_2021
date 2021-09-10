@@ -42,8 +42,7 @@ if __name__ == "__main__":
     # Создаём генератор случайных числовых последовательностей, которые будут
     # передаваться в класс Buffer для дальнейшей обработки
     while count < 10:
-        random_subsequence = [random.randint(1, 25)
-                              for i in range(random.randint(1, 10))]
-        my_buffer.add(*random_subsequence)
+        my_buffer.add(*[random.randint(1, 25)
+                        for i in range(random.randint(1, 10))])
         print(f"Текущие элементы: {my_buffer.get_current_part()}")
         count += 1
