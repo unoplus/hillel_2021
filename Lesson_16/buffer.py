@@ -19,8 +19,7 @@ class Buffer:
         :param args: входящая последовательность
         :return:
         """
-        sequence, *other = args
-        for num in sequence:
+        for num in args:
             self.subsequence.append(num)
             if len(self.subsequence) == 5:
                 for i in self.subsequence:
@@ -43,8 +42,8 @@ if __name__ == "__main__":
     # Создаём генератор случайных числовых последовательностей, которые будут
     # передаваться в класс Buffer для дальнейшей обработки
     while count < 10:
-        random_subsequence = set([random.randint(1, 25)
-                                  for i in range(random.randint(1, 10))])
-        my_buffer.add(random_subsequence)
+        random_subsequence = [random.randint(1, 25)
+                              for i in range(random.randint(1, 10))]
+        my_buffer.add(*random_subsequence)
         print(f"Текущие элементы: {my_buffer.get_current_part()}")
         count += 1
