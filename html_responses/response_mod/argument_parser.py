@@ -7,18 +7,19 @@ from response_mod import help_response as hr
 
 __all__ = ["create_params"]
 
-path = "/some_path/"
+path_to_links = "/some_path/"
 
 
-def create_parser():
+def create_parser() -> list:
     """
     Функция-парсер. Описывает получение параметров вызова скрипта.
     Вызывает функцию-обработчика полученных параметров.
     Возвращает результат работы функции-обработчика.
+    :return: Результат работы функции-обработчика.
     """
     pars = argparse.ArgumentParser()
     pars.add_argument("-n", "--name", default="man")
-    pars.add_argument("-p", "--path", default=path)
+    pars.add_argument("-p", "--path", default=path_to_links)
     pars.add_argument("-s", "--sample", action="store_true", default=False)
     pars.add_argument("-m", "--mail", default="")
 
