@@ -31,7 +31,7 @@ def get_response(some_path: str, url: list) -> None:
 def write_response(path: str, **kwargs: dict) -> None:
     """
     Приватная функция, принимает словарь и путь, записывает словарь,
-    в форматированном виде, в файл
+    в форматированном виде, в файл.
     :param path: принимает путь и имя файла для записи
     :param kwargs: словарь со ссылками и ответами
     :return:
