@@ -1,4 +1,4 @@
 """
-First app in Codespaces
+First app
 """
 print("Hello, People!")
