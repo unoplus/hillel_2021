@@ -1,4 +1,4 @@
 """
-First app
+First app (cool)
 """
 print("Hello, People!")
